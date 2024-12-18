@@ -24,7 +24,7 @@ Pipeline steps:
 6. Simulate deployment
 
 ### Code Coverage
-The pipeline enforces a minimum 90% code coverage threshold. Adjust this value in the CI workflow configuration.
+The pipeline enforces a minimum 80% code coverage threshold. Adjust this value in the CI workflow configuration.
 
 ### How to Use
 1. Clone the repository:

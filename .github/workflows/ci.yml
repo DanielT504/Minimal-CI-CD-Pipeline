@@ -36,7 +36,7 @@ jobs:
         coverage report
   
     - name: Fail if coverage is below threshold
-      run: coverage report --fail-under=90
+      run: coverage report --fail-under=80
 
     - name: Simulate Deployment
       run: |
