@@ -29,8 +29,13 @@ jobs:
         pip install flake8
         flake8 app.py
 
-    - name: Run tests
-      run: python -m unittest discover
+        - name: Run tests with coverage
+        run: |
+          coverage run -m unittest discover
+          coverage report
+  
+    - name: Fail if coverage is below threshold
+      run: coverage report --fail-under=90
 
     - name: Simulate Deployment
       run: |
